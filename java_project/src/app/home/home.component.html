@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Furniture Rental Navbar</title>
+  <style>
+     .btn-icon {
+      color: #ffffff;
+      font-size: 1.25rem;
+      transition: color 0.3s ease;
+    }
+    .btn-icon:hover {
+      color: #10b981; /* Hover color */
+    }
+
+    /* Custom Search Bar Style */
+    .search-input {
+      padding: 0.5rem 1rem;
+      width: 15rem;
+      border-radius: 0.375rem;
+      border: 1px solid #d1d5db;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      color: black;
+    }
+    .search-input:focus, .search-input:hover {
+      border-color: #10b981;
+      box-shadow: 2px 8px 100px rgba(16, 185, 129, 0.5);
+      outline: none;
+    }
+
+    /* Adjustments for logo and text */
+    .logo-text {
+      font-size: 1.5rem; /* Adjust the font size as needed */
+      font-weight: bold;
+    }
+    .logo-icon {
+      font-size: 1.5rem; /* Same size as text */
+      margin-right: 0.5rem;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet">
+</head>
+<body
+class="background-color">
+
+<nav class="bg-gray-900 text-white px-6 py-4 shadow-md">
+  <div class="container mx-auto flex justify-between items-center">
+    
+    <!-- Logo and Brand Name -->
+    <div class="flex items-center space-x-2">
+      <i class="fas fa-couch logo-icon"></i>
+      <span class="logo-text" style="font-family:cursive;">Furniture Rental</span>
+    </div>
+
+    <!-- Search Box -->
+    <div class="flex items-center space-x-2">
+      <input 
+        type="text" 
+        placeholder="Search for furniture..." 
+        class="search-input"
+      >
+      <button class="px-4 py-2 bg-teal-500 text-white rounded-md">Search</button>
+    </div>
+
+    <!-- Navbar Icons -->
+    <div class="flex items-center space-x-4">
+      <a href="/login" class="btn-login">Login</a>
+
+      <a href="/signup" class="btn-signup">Signup</a>
+    </div>
+  </div>
+</nav>
+
+
+   <div class="main-section flex items-center justify-center min-h-screen bg-cover bg-center">
+    <div class="text-center space-y-4">
+      <h1 class="text-black text-4xl font-bold" >Smart rentals, Smarter living</h1>
+      <p class="text-black text-lg" style="color: black;">Furniture, Appliances, Gadgets for every need</p>
+    
+      <div class="button-container">
+        <a href="/rent" class="btn btn-buy">Rent</a>
+        <a href="/buy" class="btn btn-login">Buy</a>
+    </div>
+    
+    </div>
+  </div><br><br>  
+
+ 
+
+
+
+
+  <div class="card-row">
+    <div class="card">
+       <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/r2/products/3452/gallery_1.jpg" alt="Bedroom Set 2" class="card-img">
+       <button class="btn-buy" (click)="liv2()">Stretch Leatherette Recliner in Dark Brown Color</button>
+       <button class="btn-buy">Rs 1110/mon</button>
+    </div>
+ 
+    <div class="card">
+       <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/6155/hero/1713422514.jpg" alt="Bedroom Set 1" class="card-img">
+       <button class="btn-buy" (click)="study1()">Lana Workstation with Mono Office Chair</button>
+       <button class="btn-buy">Rs 309/Mon</button>
+    </div>
+ </div>
+ 
+
+
+
+
+  <section class="happy-customers">
+    <h2>What our customers have to say..</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>“The service for delivery and setting up was great. The whole period from transaction to delivery has been timely and smooth.”</p>
+            <p class="customer-name">— Pruthvi Bhargav</p>
+        </div>
+        <div class="testimonial">
+            <p>“Very happy with the service and quality of the products delivered. Hope you will give us best in class service in the future as well.”</p>
+            <p class="customer-name">— Vivek S</p>
+        </div>
+        <div class="testimonial">
+            <p>“Loved the products, they are as good as new. The service provided by the company is good, in time and also co-operative. Thanks”</p>
+            <p class="customer-name">— Amar Choubey</p>
+        </div>
+    </div>
+</section>
+
+
+ 
+  <hr>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We provide high-quality furniture rental services for all your needs. Our mission is to make furniture accessible for everyone.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/buy">Buy Furniture</a></li>
+          <li><a href="/rent">Rent Furniture</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@furniturerental.com"></a></p>
+        <p>Phone: <a href="tel:+1234567890">9865234365</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Twitter</a></li>
+          <li><a href="" target="_blank">Instagram</a></li>
+          <li><a href="" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Furniture Rental. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------ -->
+
+
+
+

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Furniture Rental Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom Button Styles */
+    .btn-icon {
+      color: #ffffff;
+      font-size: 1.25rem;
+      transition: color 0.3s ease;
+    }
+    .btn-icon:hover {
+      color: #10b981; /* Hover color */
+    }
+
+    /* Custom Search Bar Style */
+    .search-input {
+      padding: 0.5rem 1rem;
+      width: 15rem;
+      border-radius: 0.375rem;
+      border: 1px solid #d1d5db;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      color: black;
+    }
+    .search-input:focus, .search-input:hover {
+      border-color: #10b981;
+      box-shadow: 2px 8px 100px rgba(16, 185, 129, 0.5);
+      outline: none;
+    }
+
+    /* Custom styling for logo icon */
+    .logo-icon {
+      font-size: 1.5rem;
+      color: #10b981;
+      margin-right: 8px; /* Space between icon and text */
+    }
+  </style>
+</head>
+<body class="background-color">
+
+<!-- Navbar -->
+<nav class="bg-gray-900 text-white px-6 py-4 shadow-md">
+  <div class="container mx-auto flex justify-between items-center">
+    
+    <!-- Logo and Brand Name -->
+    <div class="flex items-center space-x-2">
+      <i class="fas fa-couch logo-icon" style="color: white; size: 30px;"></i> <!-- Icon as logo -->
+
+      <span class="text-xl font-bold" style="font-family:cursive;">Furniture Rental</span>
+
+    </div>
+
+    <!-- Search Box -->
+    <!-- <div class="flex items-center space-x-2">
+      <input 
+        type="text" 
+        placeholder="Search furniture..." 
+        class="search-input"
+      >
+    </div> -->
+    <div class="search-container">
+      <input type="text" placeholder="Search for furniture..." class="search-input" />
+      <button class="search-button">Search</button>
+  </div>
+
+    <!-- Navbar Icons -->
+    <div class="flex items-center space-x-20">
+      <!-- Cart Icon -->
+      <a href="/cart" class="btn-icon text-6xl">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    
+      <!-- User Profile Icon -->
+      <a href="/userprofile" class="btn-icon text-6xl">
+        <i class="fas fa-user"></i>
+      </a>
+
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>

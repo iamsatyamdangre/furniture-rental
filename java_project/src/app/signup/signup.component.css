@@ -1,0 +1,105 @@
+/* General styling for the body */
+body {
+    background-color: #F5F5F5; /* Light background color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the signup container */
+/* Styling for the signup container */
+.signup-container {
+    margin-top: 100px;
+    margin-left: 40%;
+    background-color: #9A7E6F; /* Custom background color for form */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hover effect for the signup container */
+.signup-container:hover {
+    transform: translateY(-10px); /* Increased lift effect */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Styling for the form title */
+.form-title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Styling for the form labels */
+.form-group label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styling for the input fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding focus styling to input fields */
+.form-control:focus {
+    outline: none;
+    border: 2px solid #3d352f; /* Border on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for validation errors */
+.error {
+    color: #ffcccc; /* Soft red color for errors */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Submit button styling */
+.btn-submit {
+    background-color: #3d352f; /* Submit button background color */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+.btn-submit:hover {
+    background-color: #2c2a27; /* Darker shade on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Disabled button styling */
+.btn-submit:disabled {
+    background-color: #a6a6a6; /* Gray color for disabled button */
+    cursor: not-allowed;
+    opacity: 0.7;
+}

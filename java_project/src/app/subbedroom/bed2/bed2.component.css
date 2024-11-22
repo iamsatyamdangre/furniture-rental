@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #F5F5F5;
+}
+
+.product-specs {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-specs h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-specs h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.unit-toggle {
+    background-color: #E0F4F1;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.unit-toggle.active {
+    background-color: #b0d8d1;
+    color: white;
+}
+
+.general-info,
+.material-specs {
+    margin-bottom: 20px;
+}
+
+.general-info h4,
+.material-specs h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.general-info p,
+.material-specs p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 20px 0;
+}
+
+.dimension-image {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dimension-image img {
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+
+
+
+.ask-question-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f8e5; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-left: 120px;
+  }
+  
+  .ask-question-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .ask-question-container p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+  
+  .submit-query-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e0f4f1; /* Button background color */
+    color: #00796b; /* Text color */
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .submit-query-btn:hover {
+    background-color: #d2ece8;
+  }
+  
+  .help-center-link {
+    color: #00796b;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .help-center-link:hover {
+    text-decoration: underline;
+  }
+  
+  .illustration {
+    margin-top: 20px;
+  }
+  
+  .illustration img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+
+  .btn-submit {
+    background-color: #3d352f; /* Submit button background color */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-left: 580px;
+}
+  
+/* Hover effect for the submit button */
+.btn-submit:hover {
+    background-color: #2c2a27; /* Darker shade on hover */
+}
+
+
+.back-btn:hover {
+    background-color: #6b625c; /* Lighter shade on hover for the back button */
+}

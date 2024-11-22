@@ -1,0 +1,241 @@
+
+<app-nav></app-nav>
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Product Page</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             background-color: #f7f1e9;
+             margin: 0;
+             padding: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+ 
+         .container {
+             display: flex;
+             max-width: 1200px;
+             width: 100%;
+             padding: 20px;
+             background-color: #f7f1e9;
+             gap: 20px;
+         }
+ 
+         .image-section {
+             flex: 1;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             gap: 10px;
+         }
+ 
+         .main-image img {
+             width: 100%;
+             max-width: 500px;
+             border-radius: 8px;
+         }
+ 
+         .thumbnail-images {
+             display: flex;
+             gap: 5px;
+         }
+ 
+         .thumbnail-images img {
+             width: 80px;
+             height: 80px;
+             border-radius: 5px;
+             cursor: pointer;
+             transition: transform 0.2s ease;
+         }
+ 
+         .thumbnail-images img:hover {
+             transform: scale(1.1);
+         }
+ 
+         .details-section {
+             flex: 1;
+             background-color: #fff;
+             padding: 10px;
+             border-radius: 8px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         }
+ 
+         .details-section h2 {
+             font-size: 24px;
+             margin-bottom: 10px;
+             color: #333;
+         }
+ 
+         .rental-options, .price, .button-section {
+             margin: 15px 0;
+         }
+ 
+         .price {
+             font-size: 24px;
+             color: #008000;
+             font-weight: bold;
+         }
+ 
+         .price del {
+             color: #999;
+             font-size: 16px;
+             margin-left: 10px;
+         }
+ 
+         .button-section .add-to-cart {
+             background-color: #2c8b9c;
+             color: white;
+             padding: 12px 20px;
+             font-size: 18px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             transition: background-color 0.3s ease;
+         }
+ 
+         .button-section .add-to-cart:hover {
+             background-color: #23737d;
+         }
+ 
+         .info-section {
+             display: flex;
+             flex-direction: column;
+             gap: 10px;
+         }
+ 
+         .info-section p {
+             font-size: 14px;
+             color: #555;
+         }
+ 
+         .link {
+             color: #0077b6;
+             text-decoration: none;
+             font-size: 14px;
+         }
+     </style>
+ </head>
+ <body>
+ 
+ <div class="container">
+     <!-- Image Section -->
+     <div class="image-section">
+         <div class="main-image">
+             <!-- Main image with an id for JavaScript to target -->
+             <img id="mainImage" src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/134/hero/gg1.jpg" alt="Main Image">
+         </div>
+         <div class="thumbnail-images">
+             <!-- Thumbnails with onclick event to call JavaScript function -->
+             <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/134/hero/gg1.jpg" alt="Thumbnail 1" onclick="changeMainImage(this)">
+             <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/134/hero/gg2.jpg" alt="Thumbnail 2" onclick="changeMainImage(this)">
+             <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/134/hero/gg3.jpg" alt="Thumbnail 3" onclick="changeMainImage(this)">
+             <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/134/hero/gg6.jpg" alt="Thumbnail 4" onclick="changeMainImage(this)">
+             <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/134/hero/gg4.jpg" alt="Thumbnail 5" onclick="changeMainImage(this)">
+         </div>
+
+
+
+         <div class="product-specs">
+            <h2>Premium Orthopaedic Mattress Queen Size - (78 x 60 x 6 inches)</h2>
+            <p class="product-description">
+              Premium mattress has various layers of foam that supports your carefree sleep. 
+              High resilient foam and soft foam add optimal firmness, which is complemented with 
+              the plushness of the quilted top of the mattress contributing to the overall comfort. 
+              <br>***The color of the zipper cover may vary.
+            </p>
+          
+            <h3>Specifications</h3>
+            
+            <div class="toggle">
+              <button class="unit-toggle active">cm</button>
+              <button class="unit-toggle">inch</button>
+            </div>
+          
+            <div class="general-info">
+              <h4>General Information</h4>
+              <p><strong>Size:</strong> Queen Size</p>
+              <p><strong>Dimensions:</strong> 152 cm x 198 cm x 15 cm</p>
+            </div>
+          
+            <hr>
+          
+            <div class="material-specs">
+              <h4>Material specifications</h4>
+              <p><strong>Primary Material:</strong> Premium Foam</p>
+            </div>
+          
+            <div class="dimension-image">
+              <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/134/dimensions/d1.jpg" alt="Mattress dimensions diagram">
+            </div>
+          </div>
+          
+     </div>
+ 
+     <!-- Details Section -->
+     <div class="details-section">
+         <h2>Premium Orthopaedic Mattress Queen Size - (78 x 60 x 6 inches)</h2>
+         <p class="rental-options">
+             <strong>Rent for:</strong>
+             <select>
+                 <option>12 Months</option>
+                 <option>6 Months</option>
+                 <option>3 Months</option>
+             </select>
+         </p>
+         <p class="price">
+             ₹1400/MO <del>₹706/mo</del> <span style="color: #e63946;">-34% OFF</span>
+         </p>
+         <div class="button-section">
+             <!-- <button class="add-to-cart" (click)="addtoCart">Add to Cart</button> -->
+             <!-- product.component.html -->
+              <!-- product.component.html -->
+<button (click)="onAddToCart(product.id)">Add to Cart</button>
+
+        <button (click)="onAddToCart(product.id)">Add to Cart</button>
+
+         </div>
+         <div class="info-section">
+             <p>*Paid upfront</p>
+             <p>Get it by <strong>9 Nov</strong> to <strong>560068</strong> <a href="#" class="link">change pincode</a></p>
+             <p>Condition: As good as new <a href="#" class="link">know more</a></p>
+         </div>
+         
+
+<br><br><br>
+         <div class="ask-question-container">
+            <h2>Ask a Question</h2>
+            <p>Is this a query regarding this Product?</p>
+            <button class="submit-query-btn">SUBMIT A QUERY</button>
+            <p>or get Answers at the <a href="#" class="help-center-link">Help Center &gt;</a></p>
+         
+          </div>
+     </div>
+
+    
+ </div>
+
+ <!-- <a href="/bedroom" class="btn btn-submit back-btn">Back</a> -->
+
+
+
+ 
+ <script>
+     // JavaScript function to change the main image when a thumbnail is clicked
+     function changeMainImage(thumbnail) {
+         // Select the main image element by id
+         const mainImage = document.getElementById("mainImage");
+ 
+         // Set the src of the main image to the clicked thumbnail's src
+         mainImage.src = thumbnail.src;
+     }
+ </script>
+ 
+ </body>
+ </html>
+ 
+

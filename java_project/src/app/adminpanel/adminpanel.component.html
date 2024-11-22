@@ -1,0 +1,56 @@
+<div class="admin-panel">
+    <h2>Admin Panel - Manage Products</h2>
+  
+    <!-- Product Form -->
+    <div class="form-section">
+      <h3>Add Product</h3>
+      <form id="productForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Product Name" />
+  
+        <label for="description">Description</label>
+        <input type="text" id="description" placeholder="Product Description" />
+  
+        <label for="price">Price</label>
+        <input type="number" id="price" placeholder="Product Price" />
+  
+        <label for="category">Category</label>
+        <input type="text" id="category" placeholder="Product Category" />
+  
+        <label for="imageUrl">Image URL</label>
+        <input type="text" id="imageUrl" placeholder="Image URL" />
+  
+        <button type="button">Add Product</button>
+      </form>
+    </div>
+  
+    <!-- Product List Table -->
+    <div class="table-section">
+      <h3>Product List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chair</td>
+            <td>Comfortable wooden chair</td>
+            <td>$50</td>
+            <td>Living Room</td>
+            <td>
+              <button>Edit</button>
+              <button>Delete</button>
+            </td>
+          </tr>
+          <!-- Additional rows would go here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

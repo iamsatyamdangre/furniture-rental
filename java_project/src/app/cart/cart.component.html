@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bedroom Collection</title>
+  <link rel="stylesheet" />
+  
+</head>
+
+<body>
+      <h1 style="
+      text-align: center;
+      margin-top: 40px;
+      font-size: 40px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+        sans-serif;
+    ">
+ Cart
+</h1><br><br><br>
+
+      <div class="card-container" *ngFor="let ele of elements">
+        <div class="card">
+          <!-- Primary Image Section -->
+          <img src="https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/plutus/products/134/hero/gg1.jpg" alt="{{ ele.name }}" class="card-img" />
+      
+          <!-- Additional Image Section (optional) -->
+      
+          <!-- Content Section -->
+          <div class="card-content">
+            <button class="btn btn-buy">{{ ele.name }}</button>
+            <button class="btn btn-buy" style="color: white;">Rs {{ ele.rentalPrice }}</button>
+          </div>
+        </div>
+      </div><br><br><br>
+      
+      <!-- <button style="color: white;" class="btn btn-proceed" (click)="proceed()">
+      Proceed To Check Out
+      </button> -->
+
+      <a href="/proceed" style="color: white;" class="btn btn-proceed">  Proceed To Check Out</a>
+
+
+
+
+</body>
+
+</html> 
